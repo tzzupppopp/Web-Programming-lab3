@@ -1,0 +1,106 @@
+/* 通用樣式 */
+body {
+    background-color: #5d97e8; /* background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.feedback { color: red; margin-top: 5px; font-size: 0.9em; }/*error caused from when password not match*/
+
+
+/* Welcome View 佈局  */
+.welcome-container {
+    width: 650px;
+    height: 600px; /* fixed high  */
+    background-color: white;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* add shadow */
+}
+
+/*.logo-section {
+    width: 340px;
+    text-align: center;
+    border-right: 1px solid #ccc;
+    padding-right: 10px;
+}
+
+.logo-section img { width: 100%; }*/
+
+.form-section {
+    width: 250px; /* width  */
+    border-left: 5px solid #5d97e8; /* middle side divided line */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    
+}
+
+.login-box{
+    border-bottom: 5px solid #5d97e8; /* right side divided line */
+    padding-bottom: 10px;/*The distance between Login button and sign up module*/
+    margin-bottom: 10px;
+   /* modify the divided line  */
+    margin-left: -10px;        /* 往左拉回，抵消外層 padding */
+    margin-right: -70px;       /* 往右拉回，抵消外層 padding */
+    padding-left: 10px;        /* the distance between form section and middle line */
+    padding-right: 10px;       /* 補回文字內距 */
+}
+
+label { display: block; margin-top: 5px; }
+input, select { width: 100%; box-sizing: border-box; }
+
+/* Profile View 樣式  */
+.tabs { background: #eee; padding: 10px; }
+.tabs button { margin-right: 5px; }
+.tab-content { padding: 20px; background: white; min-height: 400px; }
+.message-item { border-bottom: 1px solid #ddd; padding: 10px 0; }
+
+
+/* 尋找 .logo-section 並修改為： */
+.logo-section {
+    width: 340px; /* 寬度  */
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* 讓內容從頂部開始 */
+    box-sizing: border-box;
+}
+
+/* 標題 Twidder */
+.brand-name {
+    color: #e24e42; /* 圖片中的亮紅色 */
+    font-family: "Impact", Charcoal, sans-serif; /* 改用 Impact 字體 */
+    font-size: 90px;
+    letter-spacing: 1px; /* 調整字距 */
+    font-weight: normal;
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+/* 口號的通用樣式 */
+.brand-slogan {
+    font-size: 37px;
+    font-family: "Impact", Charcoal, sans-serif; /* 改用 Impact 字體 */
+    font-weight: normal;
+    margin: 2px 0;
+    text-align: left; /* 預設居中 */
+    
+}
+
+/* 關鍵：修改 "other people" 這一行使其向右偏移 */
+.right-align {
+    text-align: right;
+    padding-left: 50px; /* 模擬圖片中向右錯開的效果 */
+}
+
+/* 底部網址 */
+.brand-footer {
+    margin-top: auto; /* 推到底部 */
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+}
